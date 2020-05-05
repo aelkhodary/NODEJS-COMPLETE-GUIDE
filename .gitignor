@@ -1,0 +1,19 @@
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+.factorypath
+/src/main/resources/rebel.xml
+
+# External tool builders
+.externalToolBuilders/**
+.class
+.idea/*
+kafka-basics/target/
+kafka-consumer-elasticsearch/target/
+kafka-producer-twitter/target/
+.idea/workspace.xml
