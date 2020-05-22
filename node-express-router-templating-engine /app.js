@@ -5,6 +5,9 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const app = express();
+// the pug templating engine 
+app.set('view engine', 'pug');
+app.set('views', 'views');
 
 //const adminRoutes = require('./routes/admin');
 const adminData = require('./routes/admin');
