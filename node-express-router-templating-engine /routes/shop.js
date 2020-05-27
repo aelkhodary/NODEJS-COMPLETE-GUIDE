@@ -10,10 +10,11 @@ const router = express.Router();
 
 
 router.get('/', (req, res, next) => {
-    //__dirname current directory path
-    //res.sendFile(path.join(__dirname, '../', 'views', 'shop.html'));
-    console.log('shop.js', adminData.products);
-    res.sendFile(path.join(rootDir, 'views', 'shop.html'));
+
+    const products = adminData.products;
+    //res.render('shop');
+    //or 
+    res.render('shop.pug', { prods: products, pageTitle: 'My Shop', path: '/shop' });
 });
 
 module.exports = router;
