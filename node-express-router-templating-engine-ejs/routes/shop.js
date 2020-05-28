@@ -14,7 +14,7 @@ router.get('/', (req, res, next) => {
     const products = adminData.products;
     //res.render('shop');
     //or 
-    res.render('shop.pug', { prods: products, pageTitle: 'My Shop', path: '/shop' });
+    res.render('shop', { prods: products, pageTitle: 'My Shop', path: '/shop' });
 });
 
 module.exports = router;
